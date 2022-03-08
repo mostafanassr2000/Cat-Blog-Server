@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="/cats/cat1.jpg">
+    <link rel="stylesheet" href="/css/styles.css">
+    <title>Home</title>
+</head>
+<body>
+
+    <%- include('../layout/header'); %>
+
+    <% if (isAuth) {%>
+        <h1>Hello, <%= user.name %> </h1>
+    <% }else {%> 
+        <a href="/login" class="login-button button">Login</a>
+    <% } %> 
+
+    <main class="home-main"> 
+        <h1 class="home-header">Cats are connoisseurs of comfort.</h1>
+        <p class="home-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi inventore eaque iusto. 
+            Perspiciatis mollitia eius aut, tempore voluptates maiores officia corrupti non vero deserunt odio obcaecati, 
+            in accusantium illo quas rem, animi iure. Similique laboriosam sit non pariatur. Maxime tempore, sapiente consequatur.
+        </p>
+    </main>
+
+    <% if (isAuth) {%>
+        <form action="/logout?_method=DELETE" method="post">
+            <button type="submit" class="button">Log out</button>
+        </form>
+    <% } %>
+
+    <%- include('../layout/footer'); %>
+
+    <script src="/app.js"></script>
+
+</body>
+</html>

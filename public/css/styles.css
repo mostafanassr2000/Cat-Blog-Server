@@ -1,0 +1,249 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --mainColor: #F0A160;
+    --backgroundColor: #F0CCB0;
+    --hoverColor: #B97D60;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+body {
+    background-color: var(--mainColor);
+    color: black;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-self: normal;
+    height: 100px;
+}
+
+.nav-list {
+    background-color: var(--backgroundColor);
+    justify-self: center;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    width: 100%;
+}
+
+header ul a {
+    color: black;
+    cursor: pointer;
+    font-size: 25px;
+    padding: 2rem;
+    transition: all 0.2s ease-in-out;
+    border-radius: 100%;
+    text-decoration: none;
+}
+
+header ul a:hover {
+    color: white;
+    transform: scale(1.1);
+    background-color: var(--hoverColor);
+}
+
+.home-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+}
+
+.home-header {
+    color: white;
+    font-size: 55px;
+    text-shadow: 0 0 5px black;
+    margin-bottom: 2rem;
+}
+
+.home-text {
+    color:white;
+    width: 80vw;
+    line-height: 25px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin: 3rem auto 1rem auto;
+}
+
+label {
+    justify-self: flex-start;
+    align-self: flex-start;
+    font-size: 20px;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+    color: white;
+    text-shadow: 0 0 3px black;
+}
+
+input {
+    margin-bottom: 2rem;
+    padding-left: 0.5rem;
+    width: 100%;
+    height: 40px;
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    background-color: transparent;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+
+.page-header {
+    align-self: normal;
+    color: white;
+    text-shadow: 1px 1px 5px black;
+    letter-spacing: 2px;
+    border-bottom: 1px solid white;
+    line-height: 50px;
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+
+.cat-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 500px;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 50px;
+    text-align: center;
+    cursor: pointer;
+    background-color: var(--backgroundColor);
+    border: none;
+    border-radius: 50px;
+    transition: all 0.3s ease-in-out;
+}
+
+.button:hover {
+   
+    background-color: var(--hoverColor);
+    transform: scale(1.1);
+    color: white;
+}
+
+.login-button {
+    margin-left: 2rem;
+}
+
+.cat-info-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-self: normal;
+}
+
+.cat-posts {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #b97e60a4;
+}
+
+.cat-post {
+    background-color: rgba(255, 255, 255, 0.795);
+    width: 400px;
+    height: 300px;
+    box-shadow: 0 0 5px black;
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.cat-post form {
+    margin: 2rem;
+}
+
+.cat-post h1 {
+    font-size: 40px;
+    color: rgb(90, 88, 88);
+    text-shadow: 1px 1px 1px black;
+    margin-bottom: 1rem;
+}
+
+.cat-post p {
+    font-size: 20px;
+}
+
+.cat-post p span {
+    text-transform: capitalize;
+    color: rgb(243, 161, 161);
+    text-shadow: 1px 1px 1px black;
+    margin-right: 1rem;
+}
+
+.page-error-handling {
+    color: white;
+    align-self: center;
+    text-shadow: 0 0 5px black;
+}
+
+.page-navigation {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    align-self: center;
+    height: 75px;
+}
+
+.page-navigation-btn {
+    display: flex;
+    align-items: center;
+    width: 25px;
+    height: 25px;
+    justify-content: center;
+    border-radius: 50%;
+    margin-right: 0.5rem; 
+    background-color: white;
+    color: black;  
+    transition: all ease-in-out 0.3s;
+}
+
+.page-navigation-btn:hover {
+    transform: scale(1.2);
+    background-color: var(--hoverColor);
+    color: white;  
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: normal;
+    height: 60px;
+    background-color: var(--backgroundColor);
+}

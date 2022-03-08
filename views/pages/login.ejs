@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="/cats/cat1.jpg">
+    <link rel="stylesheet" href="/css/styles.css">
+    <title>Add A Cat</title>
+</head>
+<body>
+
+    <%- include('../layout/header'); %>
+    <main>
+        <h1 class="page-header">Login</h1>
+        <form action="/login" method="post" class="cat-info">
+            <label for="email">Enter Your Email: </label>
+            <input required type="email" name="email">
+
+            <label for="password">Enter Your Password: </label>
+            <input required type="password" name="password">
+
+            <div class="cat-info-links">
+                <button type="submit" class="button">Login</button>
+                <a href="/register" class="button">Don't have an account?</a>
+            </div>
+           
+        </form>
+    </main>
+    <%- include('../layout/footer'); %>
+
+    <script src="/app.js"></script>
+
+</body>
+</html>
